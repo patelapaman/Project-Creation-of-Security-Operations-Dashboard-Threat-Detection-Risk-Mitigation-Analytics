@@ -1,0 +1,510 @@
+Dear Interns,
+
+Milestone 4 is not a completely new module. This is the final integration and presentation layer of everything we have built in Milestones 1, 2 and 3. Your goal is to convert the individual modules into one professional, working cybersecurity platform. By the end of M4, an analyst should be able to open the dashboard, understand the current security posture, identify the most critical threats, investigate an incident, view its attack chain and threat intelligence, understand why the incident received its risk score, and see recommended actions. Focus on making the complete flow work end-to-end rather than adding unnecessary complexity.
+
+Objective
+Develop, integrate, test, and finalize an interactive AI-assisted cybersecurity monitoring dashboard that provides real-time visibility into security events, detected threats, risk scores, attack chains, vulnerabilities, threat intelligence, and recommended response actions.
+
+1. What you interns already have :
+
+M1                                                        M2                                                   M3
+Security Data                                      Security Events                              Threat
+   ↓                                                            ↓                                                      ↓
+Normalization                                      ML Model                                        Risk Score
+   ↓                                                            ↓                                                      ↓
+Enrichment                                           Anomaly Detection                        Priority
+   ↓                                                            ↓                                                      ↓
+MITRE / CVE / IOC                               Threat Classification                      Event Correlation
+
+                                                                  ↓                                                      ↓
+
+                                                               Confidence Score                         Attack Chain
+
+                                                                                                                          ↓
+
+                                                                                                                       Recommendations
+
+#Now M4 becomes:
+
+ Security Data ---> ML Detection ---> Risk Engine ---> FINAL DASHBOARD
+
+
+2. M4 should have 6 major components
+I recommend dividing the milestone into:
+Module 4.1 — Dashboard Architecture
+Module 4.2 — Security Overview Dashboard
+Module 4.3 — Threat Investigation
+Module 4.4 — Attack Chain & Intelligence
+Module 4.5 — Filtering, Reporting & Monitoring
+Module 4.6 — Testing, Deployment & Final Documentation
+
+3. M4 Task Breakdown
+
+TASK 1 — Integrate all previous modules 
+
+This should be the first task.
+Frontend should consume:
+
+From M1
+Security Events
+Threat Intelligence
+CVE
+CVSS
+IOC
+MITRE
+Assets
+From M2
+Anomaly Score
+Prediction
+Threat Classification
+Confidence Score
+Model Version
+From M3
+Risk Score
+Risk Level
+Priority
+Related Events
+Attack Chain
+Recommendations
+Incident Status
+
+Everything should come through APIs rather than being hardcoded in the frontend.
+
+EXPECTED FLOW : MongoDB ---> Backend APIs -----> ML/Risk Results ---> React Dashboard
+
+4. TASK 2 — Build the SOC Overview Dashboard 
+This should be the main screen.The dashboard should immediately answer:"What is happening in my security environment right now?"
+
+KPI Cards
+Display:
+
+Total Security Events
+        8,542
+
+Detected Threats
+        1,284
+
+Critical Threats
+         126
+
+High Risk Incidents
+         314
+
+Active Incidents
+         87
+
+Affected Assets
+         246
+These should be dynamically calculated from the database/API.
+
+
+5. Threat Distribution
+Create charts for:
+Threat Severity
+Critical
+High
+Medium
+Low
+Threat Type
+Brute Force
+Malware
+Phishing
+SQL Injection
+Lateral Movement
+Privilege Escalation
+Data Exfiltration
+Ransomware
+Insider Threat
+...
+Threat Status
+Open
+Investigating
+Resolved
+False Positive
+
+6. Risk Trend
+Create a time-series chart.
+
+Example:
+
+Risk
+100 |             ●
+ 80 |       ●  ●     ●
+ 60 |   ●
+ 40 | ●
+ 20 |
+    +---------------------
+       1  2  3  4  5  6
+              Time
+Allow:
+
+Last 24 Hours
+Last 7 Days
+Last 30 Days
+This makes the dashboard look much more professional.
+
+
+7. TASK 3 — Critical Threat Panel 
+Create a prominent section:
+Critical Incidents
+Incident	Threat	Asset	Risk	Priority	Status
+INC-1023	Ransomware	DB-01	98	Critical	Open
+INC-1024	Data Exfiltration	APP-04	95	Critical	Investigating
+INC-1025	Privilege Escalation	SRV-09	92	Critical	Open
+
+
+Clicking an incident should open its details.
+
+
+8. TASK 4 — Threat Investigation Page
+This is one of the most important M4 features.
+
+When the analyst clicks:
+
+INC-1023
+
+show:
+
+Incident ID
+INC-1023
+
+Threat Type
+Ransomware
+
+Risk Score
+98/100
+
+Risk Level
+CRITICAL
+
+Confidence
+96%
+
+Affected Asset
+DB-01
+
+Source IP
+192.xxx.xxx.xxx
+
+User
+user_102
+
+IOC
+Malicious
+
+MITRE Technique
+T1486
+
+CVE
+CVE-2025-XXXX
+
+CVSS
+9.8
+Then:
+
+Why is this incident risky?
+✓ Critical asset
+✓ High ML confidence
+✓ Malicious IOC
+✓ High CVSS
+✓ Multiple related events
+✓ Ransomware behavior detected
+This is an excellent feature for the final demo.
+
+
+9. TASK 5 — Attack Chain Visualization
+You already implemented correlation in Milestone-3.
+Now visualize it beautifully.
+
+Example:
+
+       Initial Access
+             ↓
+      Brute Force
+             ↓
+      Credential Access
+             ↓
+     Privilege Escalation
+             ↓
+      Lateral Movement
+             ↓
+       Data Exfiltration
+Clicking each stage should show:
+
+Event ID
+Timestamp
+Source
+Destination
+User
+MITRE Technique
+Risk
+This will make the project look significantly more advanced.
+10. TASK 6 — MITRE ATT&CK Intelligence
+Create a dedicated section:
+Attack Techniques
+Technique	Name	Events	Risk
+T1110	Brute Force	124	High
+T1078	Valid Accounts	86	High
+T1059	Command & Scripting	71	Medium
+T1021	Remote Services	52	High
+T1486	Data Encrypted for Impact	21	Critical
+You can also display a simple technique distribution chart.
+
+
+11. TASK 7 — Vulnerability Intelligence
+Create:
+
+Vulnerability Overview
+Show:
+
+Critical CVEs
+High CVEs
+Medium CVEs
+Affected Assets
+And table:
+
+CVE	Asset	CVSS	Severity	Status
+CVE-XXXX	DB-01	9.8	Critical	Open
+CVE-XXXX	APP-04	8.6	High	Open
+This connects M1 enrichment → M3 risk → M4 visualization.
+
+12. TASK 8 — IOC Intelligence
+Create an IOC panel.
+
+Support:
+
+IP Address
+Domain
+URL
+File Hash
+Email
+Example:
+
+IOC: 185.xxx.xxx.xxx
+Type:
+IP Address
+Status:
+Malicious
+Threat Count:
+17
+Affected Assets:
+4
+First Seen:
+...
+Last Seen:
+...
+
+
+13. TASK 9 — Advanced Filtering
+This should definitely be included.
+
+Filters:
+
+Severity
+Risk Level
+Threat Type
+Asset
+Department
+MITRE Technique
+CVE
+IOC Status
+Incident Status
+Date Range
+Example:
+Show me all Critical threats affecting Production Servers during the last 7 days.
+
+The dashboard should update accordingly.
+
+14. TASK 10 — Drill-Down Analysis
+Don't make charts static.
+
+Example:
+
+User clicks:
+
+Ransomware = 32
+
+Then show:
+
+32 Ransomware Events
+Click one:
+
+Incident Details
+Then:
+
+Attack Chain
+Then:
+
+Related Events
+This creates:
+
+Dashboard → Incident → Attack Chain → Event
+
+which feels like a real SOC workflow.
+
+
+
+15. TASK 11 — Security Recommendations
+M3 generated recommendations.
+
+Now show them properly.
+
+Example:
+
+# Critical Incident
+Recommended Actions
+
+1. Isolate affected endpoint.
+2. Investigate malicious IOC.
+3. Review affected user credentials.
+4. Check related lateral movement activity.
+5. Escalate incident to SOC Level 2.
+Add:
+
+"Mark as Investigating"
+
+and
+
+"Mark as Resolved"
+
+buttons.
+
+
+
+16. TASK 12 — Incident Management
+Allow analyst to change:
+
+Open
+ ↓
+Investigating
+ ↓
+Resolved
+or:
+
+Open
+ ↓
+False Positive
+Store the status in MongoDB.
+
+This also creates a foundation for the feedback mechanism.
+
+
+
+17. TASK 13 — Analyst Feedback
+Since this is an AI-assisted platform, add a simple feedback feature.
+
+For each prediction:
+
+AI Prediction:
+Malicious
+Was this prediction correct?
+
+[ 👍 Correct ]   [ 👎 False Positive ]
+Store:
+
+event_id
+prediction
+actual_feedback
+analyst
+timestamp
+Important:
+Don't claim that the model automatically retrains itself unless you have actually implemented retraining.
+
+For M4, simply collecting feedback and storing it for future model improvement is enough and is a very good feature.
+
+
+
+18. TASK 14 — AI-Assisted Risk Explanation
+This can be the eye-catching feature.
+
+Instead of displaying:
+
+Risk Score = 94
+show:
+
+Why is this threat Critical?
+The incident received a critical risk score because:
+
+• The affected asset is classified as Critical.
+• The ML model detected highly anomalous behavior.
+• A malicious IOC was identified.
+• The associated vulnerability has a high CVSS score.
+• Multiple related security events indicate a possible attack chain.
+This makes the system explainable, rather than just producing numbers.
+
+
+
+19.TASK 15 — Security Posture Score
+Add one overall metric:
+
+Security Posture
+Example:
+
+72/100
+
+ --> GOOD
+Calculate it based on factors such as:
+
+Critical vulnerabilities
+Active incidents
+High-risk assets
+Unresolved threats
+Threat volume
+You can show:
+
+Security Posture
+      ↓
+72
+      ↓
+Good
+This is particularly useful for the executive view.
+
+
+
+20. TASK 16 — Executive Security Summary
+Add a separate page:
+
+Executive Security Overview
+Keep it simple.
+
+Security Posture        72/100
+
+Critical Threats        12
+
+Open Incidents          38
+
+Critical Vulnerabilities 7
+
+Affected Assets         24
+
+Threat Trend            ↓ Improving
+Charts:
+
+Threat Trend
+Risk Distribution
+Top Threat Categories
+Top Vulnerable Assets
+This demonstrates that the same system can serve both:
+SOC Analyst + Management
+
+
+21.TASK 17 — Generate Security Report
+If time permits, add:
+
+"Generate Report"
+Generate a summary containing:
+
+Report Date
+Total Events
+Detected Threats
+Critical Incidents
+High-Risk Assets
+Top Threats
+Top MITRE Techniques
+Top Vulnerabilities
+Attack Chains
+Recommendations
+Even a simple downloadable PDF/CSV report would make a strong final feature.
+
+
+I think this will be enough for our project.

@@ -1,0 +1,1310 @@
+I have provided the existing project ZIP:
+
+"Info M3(2).zip"
+
+Inside it, the main project is:
+
+AI-Assisted-Threat-Detection-Merged
+
+The project already contains a working frontend and backend.
+
+Your task is ONLY to significantly improve and professionally redesign the EXISTING FRONTEND.
+
+DO NOT rebuild the project from scratch.
+
+DO NOT replace the existing application with a mockup.
+
+DO NOT remove existing functionality.
+
+DO NOT break backend integration.
+
+DO NOT replace real API data with fake/static data.
+
+The final result must be a polished, highly interactive, professional AI-powered Cybersecurity/SOC dashboard suitable for:
+
+"Infosys Springboard Virtual Internship 7.0"
+Project:
+"Creation of Security Operations Dashboard for Threat Detection with Risk Mitigation Analytics"
+
+============================================================
+
+1. FIRST: FULLY INSPECT THE EXISTING FRONTEND
+   ============================================================
+
+Before modifying anything, inspect the complete frontend structure.
+
+The existing frontend uses:
+
+• React 18
+• Vite
+• React Router DOM
+• Recharts
+• Lucide React
+• Axios
+• PapaParse
+• Context API
+• Existing CSS architecture
+• Existing API service layer
+
+Existing important frontend areas include:
+
+• App.jsx
+• Dashboard
+• Login
+• Register
+• Security Events
+• Threats
+• Vulnerabilities
+• Incidents
+• Reports
+• Settings
+• Profile
+• Risk Intelligence
+• Incident Investigation
+• Security Intelligence
+• AI Detection
+• AI Detection Event Details
+• Live Prediction
+• Sidebar
+• Navbar
+• Notification Panel
+• Security Events Table
+• Charts
+• M2 components
+• Theme system
+• Authentication context
+• Milestone 2 context
+• API service layer
+
+Understand all routes, components, contexts, API calls and data flow before making modifications.
+
+============================================================
+2. MOST IMPORTANT RULE — PRESERVE FUNCTIONALITY
+===============================================
+
+The existing project already contains working functionality.
+
+Preserve:
+
+• Authentication
+• Login
+• Registration
+• Protected routes
+• Dashboard routing
+• Sidebar navigation
+• Navbar search
+• Security event data
+• Event filtering
+• Severity filtering
+• Event type filtering
+• Calendar filtering
+• Month/year filtering
+• IP search
+• Threat analytics
+• Vulnerability analytics
+• Incident management
+• Risk intelligence
+• Incident investigation
+• Security intelligence
+• Reports
+• Report download
+• Print functionality
+• Settings
+• Theme functionality
+• Profile
+• AI detection
+• AI predictions
+• Live prediction
+• M2 functionality
+• M3 functionality
+• Existing API integration
+• Existing backend contracts
+
+DO NOT change API endpoints unless a genuine frontend bug requires it.
+
+The current API service layer must remain compatible with the backend.
+
+In particular, preserve existing endpoints such as:
+
+/api/dashboard
+/api/events
+/api/assets
+/api/threats
+/api/incidents
+/api/vulnerabilities
+/api/analytics
+/api/profile
+/api/notifications
+/api/section-analytics
+
+and the existing Milestone 2 and Milestone 3 endpoints.
+
+============================================================
+3. MAIN DESIGN GOAL
+===================
+
+Transform the current frontend into a premium:
+
+"AI-Powered Cybersecurity Security Operations Center"
+
+visual experience.
+
+The interface should communicate:
+
+AI
++
+Threat Detection
++
+Risk Intelligence
++
+Real-Time Monitoring
++
+Security Analytics
++
+Incident Response
+
+The design should feel like a professional enterprise SOC platform.
+
+It must NOT look like:
+
+• A basic college dashboard
+• A generic admin template
+• A simple CRUD application
+• A copied Bootstrap dashboard
+
+It should look like a sophisticated cybersecurity product created specifically for the Infosys Springboard project.
+
+============================================================
+4. EXISTING DESIGN SYSTEM — IMPROVE, DON'T DESTROY
+==================================================
+
+The project already has a theme.css containing semantic design tokens.
+
+Preserve and improve this design-token approach.
+
+Continue using variables such as:
+
+--bg-deep
+--bg-panel
+--bg-panel-alt
+--bg-elevated
+--border-subtle
+--border-strong
+--text-primary
+--text-secondary
+--text-muted
+--signal-critical
+--signal-high
+--signal-medium
+--signal-safe
+--accent
+
+Do NOT randomly hardcode different colors throughout components.
+
+Maintain a consistent cybersecurity color language.
+
+Severity must remain semantically consistent:
+
+Critical → critical signal
+High → high signal
+Medium → medium signal
+Low/Safe → safe signal
+
+============================================================
+5. GLOBAL VISUAL UPGRADE
+========================
+
+Improve the entire UI with:
+
+• Premium spacing
+• Better typography hierarchy
+• Better card composition
+• Professional borders
+• Subtle glass effect
+• Layered surfaces
+• Soft shadows
+• Controlled gradients
+• Better table design
+• Better badges
+• Better buttons
+• Better inputs
+• Better dropdowns
+• Better empty states
+• Better loading states
+• Better error states
+
+Use glassmorphism carefully.
+
+Do NOT make everything transparent.
+
+Do NOT overuse neon.
+
+Do NOT use distracting cyberpunk effects.
+
+The final design should be:
+
+"Enterprise SOC"
+rather than
+"Gaming Cyberpunk".
+
+============================================================
+6. ADVANCED ANIMATION SYSTEM
+============================
+
+Add high-quality animations throughout the frontend.
+
+Animations must be purposeful and lightweight.
+
+Implement:
+
+A. PAGE TRANSITIONS
+
+When navigating between pages:
+
+• Smooth fade
+• Small vertical/slide movement
+• No sudden visual jumps
+
+B. CARD ENTRANCE
+
+Dashboard cards should appear using subtle staggered animation.
+
+Example:
+
+Card 1 → 0ms
+Card 2 → 60ms
+Card 3 → 120ms
+Card 4 → 180ms
+
+Do not make animations too slow.
+
+C. KPI COUNTERS
+
+Animate important numbers when loaded.
+
+Examples:
+
+Total Events
+Critical Threats
+Active Incidents
+Vulnerabilities
+Risk Score
+Detection Confidence
+
+Use smooth counting transitions.
+
+D. THREAT STATUS
+
+Critical/High threat indicators can have a very subtle pulse.
+
+Never create aggressive flashing.
+
+E. AI MONITORING
+
+Create a professional AI monitoring indicator:
+
+● AI ENGINE ACTIVE
+
+with a subtle animated pulse.
+
+F. CHART ANIMATION
+
+Use Recharts animation features where appropriate.
+
+Charts should:
+
+• Animate on initial load
+• Have smooth tooltips
+• Highlight hovered values
+• Have professional transitions
+
+G. SIDEBAR
+
+Animate:
+
+• Collapse
+• Expand
+• Active item
+• Hover
+• Mobile drawer
+
+H. BUTTONS
+
+Add:
+
+• Hover transition
+• Press feedback
+• Loading state
+• Disabled state
+
+I. MODALS
+
+Use:
+
+• Fade
+• Scale
+• Backdrop blur
+• Smooth close
+
+J. NOTIFICATIONS
+
+Notifications should slide smoothly into view.
+
+============================================================
+7. DASHBOARD OVERVIEW — MOST IMPORTANT SCREEN
+=============================================
+
+The Overview/Dashboard page should become the strongest page in the application.
+
+Create a premium hero section.
+
+Suggested structure:
+
+SECURITY OPERATIONS CENTER
+
+AI-Assisted Threat Detection
+
+"Real-time intelligent security monitoring and risk analysis"
+
+Show:
+
+● AI ENGINE ACTIVE
+● SYSTEM ONLINE
+● TELEMETRY CONNECTED
+
+Then show KPI cards:
+
+Total Security Events
+Critical Threats
+High Severity Alerts
+Active Incidents
+Vulnerabilities
+Security/Risk Score
+
+Cards must contain:
+
+• Icon
+• Value
+• Label
+• Supporting context
+• Subtle animation
+• Hover interaction
+
+Use actual existing data.
+
+Do NOT fabricate statistics.
+
+============================================================
+8. DASHBOARD THREAT MONITORING AREA
+===================================
+
+Improve the existing threat visualization.
+
+Include existing meaningful data such as:
+
+• Threat severity
+• Threat types
+• Monthly activity
+• Protocol distribution
+• Event status
+• Source countries
+• Security events
+
+Make charts interactive.
+
+Hovering a chart element should clearly show:
+
+• Category
+• Count
+• Percentage where useful
+
+============================================================
+9. INVESTIGATION FILTER EXPERIENCE
+==================================
+
+The existing Dashboard already has investigation filters.
+
+Do NOT remove them.
+
+Improve them visually and ergonomically.
+
+Existing filtering functionality includes:
+
+• Severity
+• Event Type
+• Calendar View
+• Specific Date
+• Month
+• Year
+• IP Address
+• Global Search
+• Reset Filters
+
+Turn this into a professional:
+
+"Threat Investigation Console"
+
+Add:
+
+• Better filter chips
+• Active-filter indicators
+• Clear filter state
+• Smooth transitions
+• Better responsive layout
+• Filter count
+• Empty results state
+
+Example:
+
+"47 matching events"
+
+"3 active filters"
+
+============================================================
+10. SECURITY EVENTS TABLE
+=========================
+
+Upgrade the existing Security Events Table.
+
+Keep the existing data and functionality.
+
+Improve:
+
+• Row hover
+• Severity badge
+• Status badge
+• IP formatting
+• Timestamp formatting
+• Table spacing
+• Header
+• Pagination if already supported
+• Responsive behavior
+
+When a user selects an event, provide a polished details experience where compatible with the existing application.
+
+Use a modal or side drawer if appropriate.
+
+============================================================
+11. AI DETECTION PAGE
+=====================
+
+The existing:
+
+/dashboard/ai-detection
+
+must become a visually impressive AI Security Intelligence Center.
+
+Highlight:
+
+AI Threat Detection
+
+AI Model Status
+
+Prediction Results
+
+Anomaly Detection
+
+Threat Confidence
+
+Risk Score
+
+Model Performance
+
+Detection Statistics
+
+Use professional AI visualizations.
+
+Create an AI analysis card showing:
+
+Threat classification
+Confidence
+Risk
+Detection reason
+Recommended action
+
+Do not invent AI results.
+
+Use existing backend/API/model data.
+
+============================================================
+12. LIVE PREDICTION PAGE
+========================
+
+Improve:
+
+/dashboard/ai-detection/live
+
+Make it feel like a real-time AI analysis console.
+
+Include:
+
+• Input section
+• Prediction status
+• Processing animation
+• AI scanning indicator
+• Prediction result
+• Confidence meter
+• Risk level
+• Explanation
+• Recommended action
+
+When prediction is processing:
+
+"AI MODEL ANALYZING TELEMETRY..."
+
+with a professional scanning animation.
+
+When complete:
+
+"ANALYSIS COMPLETE"
+
+Do not fake processing results.
+
+============================================================
+13. AI EVENT DETAILS
+====================
+
+Improve:
+
+/dashboard/ai-detection/events/:id
+
+Create a detailed security event investigation interface.
+
+Show available information such as:
+
+• Event ID
+• Timestamp
+• Source IP
+• Destination IP
+• Event type
+• Protocol
+• Severity
+• Threat classification
+• Confidence
+• Risk score
+• AI analysis
+• Status
+
+Use a timeline-style presentation where meaningful.
+
+============================================================
+14. RISK INTELLIGENCE — MILESTONE 3
+===================================
+
+Do NOT break existing M3 functionality.
+
+Upgrade the UI of:
+
+Risk Intelligence
+
+Incident Investigation
+
+Attack Chains
+
+High Risk Events
+
+Threat Intelligence
+
+Risk Calculation
+
+Create a professional "Risk Intelligence Center".
+
+Use visual hierarchy for:
+
+Critical Risk
+High Risk
+Medium Risk
+Low Risk
+
+Make attack-chain information visually understandable.
+
+If attack chains exist in the existing data, represent them using a clean visual sequence/timeline.
+
+============================================================
+15. INCIDENT MANAGEMENT
+=======================
+
+Improve:
+
+Incidents
+Incident Investigation
+
+Make incident lifecycle visually clear:
+
+Detected
+Investigating
+Contained
+Resolved
+
+Use timeline/status visualization.
+
+Maintain all existing API operations.
+
+If the existing backend supports status updates, make the UI provide excellent feedback:
+
+Updating...
+Updated successfully
+Update failed
+
+Never pretend an update succeeded.
+
+============================================================
+16. THREATS PAGE
+================
+
+Upgrade the existing Threat Distribution page.
+
+Maintain its existing analytics.
+
+Improve:
+
+• Severity donut/pie
+• Attack type chart
+• Monthly trend
+• Protocol distribution
+• Event status
+• Analyst focus
+• Source country table
+
+Add meaningful hover interactions.
+
+Add subtle chart entrance animation.
+
+Do not overload the page with unnecessary visualizations.
+
+============================================================
+17. VULNERABILITIES PAGE
+========================
+
+Create a professional vulnerability-management appearance.
+
+Use:
+
+• Severity
+• CVSS
+• Status
+• Asset
+• Priority
+
+Make critical vulnerabilities visually prominent.
+
+Use risk-based sorting/visual hierarchy where supported by the current data.
+
+============================================================
+18. REPORTS PAGE
+================
+
+Improve the Reports page without breaking:
+
+• Download JSON Report
+• Print / Save as PDF
+
+Make it look like an executive security report.
+
+Add:
+
+• Executive summary
+• Security posture
+• Threat overview
+• Vulnerability posture
+• Incident response
+• Priority actions
+
+Use existing data.
+
+Make the report visually presentation-ready.
+
+============================================================
+19. SECURITY INTELLIGENCE
+=========================
+
+Improve the Security Intelligence page into a professional intelligence center.
+
+Emphasize:
+
+• Threat intelligence
+• Indicators
+• Security posture
+• Risk information
+• Threat trends
+
+Use clear cards and visual hierarchy.
+
+============================================================
+20. LOGIN PAGE
+==============
+
+The existing login page already has:
+
+• Security branding
+• Grid background
+• Telemetry chips
+• AI Engine Ready
+• Threat Monitoring
+• Animated/glowing visual elements
+
+Do NOT remove these concepts.
+
+Instead make the login page more premium.
+
+Add subtle:
+
+• Security grid movement
+• AI telemetry animation
+• Shield animation
+• Input focus effects
+• Login button micro-interaction
+• Loading animation
+
+Keep authentication fully functional.
+
+Do NOT create fake login behavior.
+
+============================================================
+21. REGISTER PAGE
+=================
+
+Improve the Register page to visually match Login.
+
+Maintain:
+
+• Existing registration functionality
+• Validation
+• API integration
+• Navigation
+
+Add professional form interactions and feedback.
+
+============================================================
+22. NAVBAR
+==========
+
+Improve Navbar.
+
+Include polished versions of:
+
+• Page title
+• Global search
+• Notifications
+• System status
+• User/profile
+
+Search must remain functional.
+
+Do not create a decorative search box that does nothing.
+
+============================================================
+23. SIDEBAR
+===========
+
+Upgrade the existing Sidebar.
+
+Keep all existing routes.
+
+Add:
+
+• Better active state
+• Smooth hover
+• Tooltip when collapsed
+• Icon animation
+• Mobile drawer
+• Clear grouping
+
+Possible sections:
+
+OVERVIEW
+Security Operations
+Threat Intelligence
+AI Detection
+Risk Intelligence
+Reports
+System
+
+But only use routes/features that actually exist.
+
+============================================================
+24. NOTIFICATION PANEL
+======================
+
+Improve NotificationPanel.
+
+Use:
+
+• Severity indicator
+• Timestamp
+• Unread state
+• Hover interaction
+• Smooth entrance
+• Empty state
+
+If existing notification APIs are available, use them.
+
+Do not create fake notifications just for visual effect.
+
+============================================================
+25. SETTINGS PAGE
+=================
+
+The existing Settings page must remain functional.
+
+Improve its visual quality.
+
+Make sections:
+
+Security Controls
+Alert Preferences
+Dashboard Preferences
+System Information
+
+Use modern toggle switches.
+
+Improve theme switching.
+
+IMPORTANT:
+
+Theme state must remain synchronized with the actual application theme.
+
+Do not create a theme dropdown that changes only local state while the rest of the UI remains unchanged.
+
+============================================================
+26. LIGHT/DARK THEME
+====================
+
+Preserve the existing theme architecture.
+
+Improve both:
+
+Dark mode
+Light mode
+
+Both must be professional and readable.
+
+Dark mode:
+
+Premium SOC / analyst console.
+
+Light mode:
+
+Clean enterprise security dashboard.
+
+Use smooth transitions.
+
+Respect:
+
+prefers-reduced-motion
+
+============================================================
+27. RESPONSIVE DESIGN
+=====================
+
+The application must work properly on:
+
+• Desktop
+• Laptop
+• Tablet
+• Mobile
+
+Test:
+
+320px
+375px
+425px
+768px
+1024px
+1280px
+1440px
+1920px
+
+No:
+
+• Horizontal scrolling
+• Overlapping cards
+• Broken charts
+• Cut-off text
+• Broken sidebar
+• Broken modal
+• Broken table
+• Overflowing buttons
+
+Charts must resize correctly.
+
+============================================================
+28. ACCESSIBILITY
+=================
+
+Improve accessibility.
+
+Use:
+
+• Semantic HTML
+• Keyboard navigation
+• Focus states
+• ARIA labels
+• Accessible buttons
+• Proper labels
+• Tooltip for icon-only controls
+• Sufficient contrast
+
+Do not communicate severity through color alone.
+
+============================================================
+29. ERROR / LOADING / EMPTY STATES
+==================================
+
+Every major data-driven component must have:
+
+Loading state
+Error state
+Empty state
+Success state where appropriate
+
+Instead of blank screens:
+
+"No active threats detected"
+
+"All monitored systems are currently operating normally."
+
+For API failure:
+
+"Unable to load threat telemetry."
+
+Provide a retry action when appropriate.
+
+Do NOT expose raw JavaScript errors to users.
+
+============================================================
+30. API SAFETY
+==============
+
+The existing:
+
+src/services/api.js
+
+is critical.
+
+Do not break its existing API contracts.
+
+Do not replace fetch/API calls with hardcoded data.
+
+Do not remove existing Milestone 2/Milestone 3 APIs.
+
+If frontend error handling needs improvement, improve it safely.
+
+Handle:
+
+• Network failure
+• HTTP failure
+• Empty response
+• Malformed response
+• Loading state
+
+without crashing the application.
+
+============================================================
+31. PERFORMANCE
+===============
+
+Keep the application fast.
+
+Do NOT add unnecessary heavy animation libraries.
+
+Prefer existing:
+
+React
+CSS
+Lucide
+Recharts
+
+where possible.
+
+Avoid:
+
+• Excessive DOM animation
+• Infinite expensive animations
+• Unnecessary re-renders
+• Duplicate API calls
+• Memory leaks
+• Huge visual effects
+• Heavy background videos
+
+Use CSS animations when sufficient.
+
+Use React state carefully.
+
+Clean up timers/listeners/effects properly.
+
+============================================================
+32. CODE QUALITY
+================
+
+Keep the code maintainable.
+
+Avoid:
+
+• Giant components
+• Duplicate CSS
+• Duplicate logic
+• Unused imports
+• Unused variables
+• Broken references
+• Dead code
+
+Create reusable components where genuinely useful.
+
+Examples:
+
+AnimatedKPI
+StatusBadge
+SeverityBadge
+LoadingState
+EmptyState
+ErrorState
+MetricCard
+SectionHeader
+ThreatStatus
+RiskMeter
+ConfidenceMeter
+
+But do not over-engineer.
+
+============================================================
+33. ICON SYSTEM
+===============
+
+Use Lucide React icons consistently.
+
+Avoid mixing random icon styles.
+
+Suggested icon concepts:
+
+Shield
+ShieldAlert
+Activity
+Brain/AI-style icon
+TriangleAlert
+Bug
+Siren
+Network
+Database
+Lock
+Radar
+Search
+Bell
+FileText
+BarChart
+LineChart
+Settings
+
+Use icons meaningfully.
+
+============================================================
+34. VISUAL MICRO-INTERACTIONS
+=============================
+
+Add subtle micro-interactions to:
+
+• Cards
+• Buttons
+• Tabs
+• Filters
+• Table rows
+• Badges
+• Sidebar items
+• Notifications
+• Charts
+
+Example:
+
+Card hover:
+translateY(-2px)
+
+Border:
+subtle accent transition
+
+Shadow:
+slightly stronger on hover
+
+Do NOT make every component bounce or glow.
+
+============================================================
+35. PRESENTATION / MENTOR IMPACT
+================================
+
+Optimize the UI for a live mentor demonstration.
+
+Within 30 seconds of opening the dashboard, the mentor should understand:
+
+1. This is a cybersecurity dashboard.
+2. It uses AI-assisted threat detection.
+3. It monitors security events.
+4. It analyzes threats.
+5. It manages vulnerabilities.
+6. It handles incidents.
+7. It provides risk intelligence.
+8. It provides analytics and reports.
+
+The UI should make the project easy to explain.
+
+============================================================
+36. DO NOT ADD FAKE FEATURES
+============================
+
+This is extremely important.
+
+Do NOT create:
+
+• Fake live traffic
+• Fake AI predictions
+• Fake notifications
+• Fake threat counts
+• Fake network attacks
+• Fake backend responses
+• Fake success messages
+
+If a feature cannot be connected to the existing backend/data,
+do not pretend it is real.
+
+You may improve the presentation of existing data.
+
+============================================================
+37. BUILD AND VALIDATION
+========================
+
+After all frontend modifications:
+
+Run the project.
+
+Run:
+
+npm install
+
+then:
+
+npm run build
+
+Fix every build error.
+
+Also check:
+
+• Browser console
+• React warnings
+• Route errors
+• Broken imports
+• Missing assets
+• API failures
+• CSS issues
+• Chart errors
+• Responsive layout
+• Authentication flow
+
+Verify all routes individually.
+
+============================================================
+38. REQUIRED ROUTE CHECK
+========================
+
+Verify at minimum:
+
+/login
+/register
+/dashboard
+/dashboard/events
+/dashboard/threats
+/dashboard/vulnerabilities
+/dashboard/incidents
+/dashboard/risk-intelligence
+/dashboard/security-intelligence
+/dashboard/reports
+/dashboard/settings
+/dashboard/ai-detection
+/dashboard/ai-detection/live
+/dashboard/ai-detection/events/:id
+/dashboard/profile/:id
+
+Do not remove or rename these routes unless there is a genuine
+existing routing bug that must be fixed.
+
+============================================================
+39. FINAL QUALITY GATE
+======================
+
+Do NOT declare the project complete until all of the following
+are verified:
+
+✓ Application starts
+✓ Production build succeeds
+✓ Login works
+✓ Register works
+✓ Protected routes work
+✓ Sidebar works
+✓ Navbar works
+✓ Global search works
+✓ Filters work
+✓ Reset filters works
+✓ Charts render
+✓ Threat analytics render
+✓ Vulnerability analytics render
+✓ Incident pages work
+✓ Risk Intelligence works
+✓ AI Detection works
+✓ Live Prediction works
+✓ Event Details work
+✓ Reports work
+✓ Download Report works
+✓ Print Report works
+✓ Settings work
+✓ Theme works
+✓ Profile works
+✓ Notifications work where supported
+✓ API integration remains functional
+✓ No console errors
+✓ No React warnings
+✓ No broken imports
+✓ No broken routes
+✓ No broken assets
+✓ No fake interactive elements
+✓ No horizontal overflow
+✓ Responsive layout works
+✓ Animations are smooth
+✓ Reduced-motion support works
+✓ Performance remains acceptable
+
+============================================================
+40. FINAL INSTRUCTION
+=====================
+
+DO NOT simply make the dashboard "look prettier".
+
+Transform the existing frontend into a cohesive, professional,
+interactive AI-assisted cybersecurity product while preserving
+the complete existing functionality and backend integration.
+
+The final result should look like:
+
+"Enterprise AI Cybersecurity Security Operations Center"
+
+built for:
+
+"Infosys Springboard Virtual Internship 7.0"
+
+It must be:
+
+Professional
+Creative
+Interactive
+Animated
+Responsive
+Accessible
+Fast
+Maintainable
+Data-driven
+API-connected
+Error-free
+
+Most importantly:
+
+DO NOT BREAK THE EXISTING MILESTONE 1, MILESTONE 2 OR MILESTONE 3 FUNCTIONALITY.
+
+Inspect → Improve → Test → Fix → Build → Verify.
+
+Do not claim success until the application has actually been verified.
